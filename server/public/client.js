@@ -97,7 +97,7 @@ function addMovie() {
   
   $.ajax({
     method: 'POST',
-    url: '/movie',
+    url: '/movie/add',
     data: newMovie
   }).then( function(response) {
     console.log('Movie added');

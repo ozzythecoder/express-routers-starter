@@ -5,7 +5,7 @@ const movieList = [];
 
 router.get('/', (req, res) => { res.send(movieList) });
 
-router.post('/', (req, res) => {
+router.post('/add', (req, res) => {
   movieList.push(req.body);
   res.sendStatus(200);
 });
